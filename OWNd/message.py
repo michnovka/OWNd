@@ -362,6 +362,8 @@ class OWNEvent(OWNMessage):
                 return OWNAuxEvent(data)
             elif _who == 13:
                 return OWNGatewayEvent(data)
+            elif _who == 14:
+                return cls(data)
             elif _who == 15:
                 return OWNCENEvent(data)
             elif _who == 17:
